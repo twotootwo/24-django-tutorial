@@ -21,6 +21,6 @@ from django.urls import path
 from main.views import CalculatorAPIView
 
 urlpatterns = [
-    path("admin/", admin.site.urls),
+    path("admin", admin.site.urls),
     path("calc", CalculatorAPIView.as_view()),
 ]
